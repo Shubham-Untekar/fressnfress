@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #F9F5F0;
+  --color-bakery-red: #D65A31;
+  --color-fresh-green: #88B04B;
+  --color-charcoal: #333333;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-montserrat);
+
+  --color-cream: var(--color-cream);
+  --color-bakery-red: var(--color-bakery-red);
+  --color-fresh-green: var(--color-fresh-green);
+  --color-charcoal: var(--color-charcoal);
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+}
+
+/* Hide Next.js Dev Indicators */
+[data-nextjs-toast],
+[data-nextjs-dialog-overlay] {
+  display: none !important;
+}
+
+#next-route-announcer {
+  display: none !important;
+}
